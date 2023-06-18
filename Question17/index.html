@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        const month = prompt("Enter the month:");
+
+let days;
+
+switch (month) {
+  case 'January':
+  case 'March':
+  case 'May':
+  case 'July':
+  case 'August':
+  case 'October':
+  case 'December':
+    days = 31;
+    break;
+  case 'April':
+  case 'June':
+  case 'September':
+  case 'November':
+    days = 30;
+    break;
+  case 'February':
+    days = '28 or 29';
+    break;
+  default:
+    days = 'Invalid month';
+}
+
+console.log(`The number of days in ${month} is: ${days}`);
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

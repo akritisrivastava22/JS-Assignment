@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        const month = prompt("Enter the month:");
+const year = prompt("Enter the year:");
+
+let days;
+
+switch (month) {
+  case 'January':
+  case 'March':
+  case 'May':
+  case 'July':
+  case 'August':
+  case 'October':
+  case 'December':
+    days = 31;
+    break;
+  case 'April':
+  case 'June':
+  case 'September':
+  case 'November':
+    days = 30;
+    break;
+  case 'February':
+    if ((year % 4 === 0 && year % 100 !== 0) || year % 400 === 0) {
+      days = 29;
+    } else {
+      days = 28;
+    }
+    break;
+  default:
+    days = 'Invalid month';
+}
+
+console.log(`The number of days in ${month} of ${year} is: ${days}`);
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
