@@ -1,0 +1,1 @@
+const web_techs = ["JAVASCRIPT", "REACT", "MONGODB", "OOPS"]
